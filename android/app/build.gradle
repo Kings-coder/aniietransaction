@@ -1,0 +1,18 @@
+flavorDimensions"default"
+productFlavors {
+production {
+dimension "default"
+applicationIdSuffix ""
+manifestPlaceholders = [appName: "App"]
+}
+staging {
+dimension "default"
+applicationIdSuffix ".stg"
+manifestPlaceholders = [appName: "[STG] App"]
+}
+development {
+dimension "default"
+applicationIdSuffix ".dev"
+manifestPlaceholders = [appName: "[DEV] App"]
+}
+}
